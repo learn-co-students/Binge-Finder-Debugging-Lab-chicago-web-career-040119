@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
+    console.log(Adapter.getShows())
     Adapter.getShows().then(shows => this.setState({shows}))
   }
 
