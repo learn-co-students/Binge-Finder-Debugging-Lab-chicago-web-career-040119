@@ -5,8 +5,6 @@ import Nav from './Nav';
 import SelectedShowContainer from './SelectedShowContainer';
 import { Grid } from 'semantic-ui-react';
 
-
-
 class App extends Component {
   state = {
     shows: [],
@@ -25,7 +23,7 @@ class App extends Component {
     window.scrollTo(0, 0)
   }
 
-  handleSearch (e){
+  handleSearch =(e)=> {
     this.setState({ searchTerm: e.target.value.toLowerCase() })
   }
 
